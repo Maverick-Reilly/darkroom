@@ -16,7 +16,7 @@ jobs:
       - name: 设置Node.js
         uses: actions/setup-node@main
         with:
-          node-version: 14
+          node-version: 20
           registry-url: https://registry.npmjs.org/ # 如果不配置将影响publish
 
       - name: 安装依赖
@@ -50,3 +50,10 @@ jobs:
           release_name: v${{steps.version.outputs.value}}
           draft: false
           prerelease: false
+
+      - name: Deploy
+        if: ${{ github.event_name == 'push' || inputs.deploy }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist

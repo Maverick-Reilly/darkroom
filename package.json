@@ -2,7 +2,7 @@
   "name": "adarkroom",
   "type": "module",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "repository": "git@github.com:doublespeakgames/adarkroom.git",
   "author": "Michael Townsend <michael@doublespeakgames.com>",
   "license": "MPL-2.0",

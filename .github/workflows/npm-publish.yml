@@ -1,7 +1,7 @@
 # action名称
 name: Publish and Release
 
-# 代码合并到master分支的时候，执行下列脚本
+# 代码合并到master分支，执行下列脚本
 on:
   push:
     branches: ["main"]
@@ -22,8 +22,8 @@ jobs:
       - name: 安装依赖
         run: npm install
 
-      - name: 构建packages
-        run: npm run lib
+      #- name: 构建packages
+      #  run: npm run lib
 
       - name: 发布NPM包
         env:

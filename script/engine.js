@@ -148,11 +148,11 @@
         .click(() => Engine.toggleVolume())
         .appendTo(menu);
 
-      $('<span>')
-        .addClass('appStore menuBtn')
-        .text(_('get the app.'))
-        .click(Engine.getApp)
-        .appendTo(menu);
+      // $('<span>')
+      //   .addClass('appStore menuBtn')
+      //   .text(_('get the app.'))
+      //   .click(Engine.getApp)
+      //   .appendTo(menu);
 
       $('<span>')
         .addClass('lightsOff menuBtn')
@@ -172,11 +172,11 @@
         .click(Engine.confirmDelete)
         .appendTo(menu);
 
-      $('<span>')
-        .addClass('menuBtn')
-        .text(_('share.'))
-        .click(Engine.share)
-        .appendTo(menu);
+      // $('<span>')
+      //   .addClass('menuBtn')
+      //   .text(_('share.'))
+      //   .click(Engine.share)
+      //   .appendTo(menu);
 
       $('<span>')
         .addClass('menuBtn')
@@ -194,11 +194,11 @@
           .appendTo(menu);
       }
 
-      $('<span>')
-        .addClass('menuBtn')
-        .text(_('github.'))
-        .click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
-        .appendTo(menu);
+      // $('<span>')
+      //   .addClass('menuBtn')
+      //   .text(_('github.'))
+      //   .click(function() { window.open('https://github.com/Maverick-Reilly/darkroom'); })
+      //   .appendTo(menu);
 
       // Register keypress handlers
       $('body').off('keydown').keydown(Engine.keyDown);

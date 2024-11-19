@@ -6,26 +6,25 @@
 
 Events.Marketing = [{
   /* Play Penrose! */
-  title: _('Penrose'),
+  title: _('空洞'),
   isAvailable: () => !$SM.get('marketing.penrose'),
   scenes: {
     'start': {
       text: [
-        _('a strange thrumming, pounding and crashing. visions of people and places, of a huge machine and twisting curves.'),
-        _('inviting. it would be so easy to give in, completely.')
+        _('一种奇怪的嗡嗡声、冲击声和撞击声。人们和地方的景象，一台巨大的机器和扭曲的曲线。'),
+        _('邀请。加入是如此容易。')
       ],
-      notification: _('a strange thrumming, pounding and crashing. and then gone.'),
+      notification: _('一种奇怪的嗡嗡声、砰砰声和撞击声。然后就消失了。'),
       blink: true,
       buttons: {
         'give in': {
-          text: _('give in'),
+          text: _('加入'),
           onClick: () => {
             $SM.set('marketing.penrose', true);
-          },
-          link: 'https://penrose.doublespeakgames.com/?utm_source=adarkroom&utm_medium=crosspromote&utm_campaign=event'
+          }
         },
         'ignore': {
-          text: _('ignore it'),
+          text: _('忽略'),
           nextScene: 'end'
         }
       }

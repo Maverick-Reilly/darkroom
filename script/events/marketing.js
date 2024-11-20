@@ -23,7 +23,7 @@ Events.Marketing = [{
             $SM.set('marketing.penrose', true);
           },
          reward: { 'wood': 10 },
-						   notification: _('收到10根木头。')
+	 notification: _('收到10根木头。')
         },
         'ignore': {
           text: _('忽略'),

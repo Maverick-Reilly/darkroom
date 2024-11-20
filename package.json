@@ -1,7 +1,7 @@
 {
   "name": "adarkroom",
   "type": "module",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "repository": "git@github.com:doublespeakgames/adarkroom.git",
   "author": "Michael Townsend <michael@doublespeakgames.com>",
